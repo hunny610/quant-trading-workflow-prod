@@ -1,5 +1,32 @@
 # 版本說明
 
+## v1.2 (2026-05-07)
+
+### 新增功能
+- **blave_batch_capture_2025.mjs** - 2025 官方版批次抓取腳本
+- **blave_batch_capture_optimized.mjs** - 優化版批次抓取腳本
+- **Blave批次抓取_2025官方版.ps1** - 2025 官方版 PowerShell 腳本
+- 保留所有 v1.1 的模組化結構（providers/、capture_utils.mjs）
+
+### 目錄結構
+```
+v1.2/
+├── docs/              # 文件（同 v1.1）
+├── prompts/           # 提示詞（同 v1.1）
+├── src/
+│   ├── providers/     # 模組化提供者（同 v1.1）
+│   ├── capture_utils.mjs  # 工具函式（同 v1.1）
+│   ├── blave_batch_capture_2025.mjs  # 新增：2025官方版
+│   ├── blave_batch_capture_optimized.mjs  # 新增：優化版
+│   └── ... （其他同 v1.1）
+├── tools/             # 工具（同 v1.1）
+├── Blave批次抓取.ps1  # （同 v1.1）
+├── Blave批次抓取_2025官方版.ps1  # 新增
+└── ... （其他同 v1.1）
+```
+
+---
+
 ## v1.1 (2026-05-06)
 
 ### 新增功能
