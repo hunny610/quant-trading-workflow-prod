@@ -1,0 +1,22 @@
+{
+  "name": "quant-trading-workflow",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clear": "node ./src/clear_data.mjs",
+    "high": "npm run capture:blave:toptrader:position && npm run capture:blave:holder_concentration:overview && npm run capture:blave:whale_hunter:overview",
+    "capture:blave:toptrader:position": "node ./src/blave_capture.mjs --task blave:toptrader:position --waitMs 60000",
+    "capture:blave:liquidation:overview": "node ./src/blave_capture.mjs --task blave:liquidation:overview --waitMs 60000",
+    "capture:blave:taker_intensity:overview": "node ./src/blave_capture.mjs --task blave:taker_intensity:overview --waitMs 60000",
+    "capture:blave:whale_hunter:overview": "node ./src/blave_capture.mjs --task blave:whale_hunter:overview --waitMs 60000",
+    "capture:blave:holder_concentration:overview": "node ./src/blave_capture.mjs --task blave:holder_concentration:overview --waitMs 60000",
+    "capture:blave:market_sentiment:overview": "node ./src/blave_capture.mjs --task blave:market_sentiment:overview --waitMs 60000",
+    "capture:blave:funding_rate:overview": "node ./src/blave_capture.mjs --task blave:funding_rate:overview --waitMs 60000",
+    "capture:blave:funding_rate:history": "node ./src/blave_capture.mjs --task blave:funding_rate:history --waitMs 60000",
+    "capture:blave:oi_imbalance:overview": "node ./src/blave_capture.mjs --task blave:oi_imbalance:overview --waitMs 60000",
+    "capture:blave:squeeze_momentum:history": "node ./src/blave_capture.mjs --task blave:squeeze_momentum:history --waitMs 60000"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
