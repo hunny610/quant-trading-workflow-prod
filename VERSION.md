@@ -75,12 +75,15 @@ v1/
 
 ## 版本差異比較
 
-| 項目 | v1 | v1.1 |
-|-----|----|------|
-| scripts/ 目錄 | ✅ | ❌ |
-| quick_start.ps1 | ✅ | ❌ |
-| capture_utils.mjs | ❌ | ✅ |
-| providers/ 目錄 | ❌ | ✅ |
-| Blave批次抓取.ps1 | ❌ | ✅ |
-| npm run high | ❌ | ✅ |
-| npm run go | ❌ | ✅ |
+| 項目 | v1 | v1.1 | v1.2 |
+|-----|----|------|------|
+| scripts/ 目錄 | ✅ | ❌ | ❌ |
+| quick_start.ps1 | ✅ | ❌ | ❌ |
+| capture_utils.mjs | ❌ | ✅ | ✅ |
+| providers/ 目錄 | ❌ | ✅ | ✅ |
+| Blave批次抓取.ps1 | ❌ | ✅ | ✅ |
+| Blave批次抓取_2025官方版.ps1 | ❌ | ❌ | ✅ |
+| blave_batch_capture_2025.mjs | ❌ | ❌ | ✅ |
+| blave_batch_capture_optimized.mjs | ❌ | ❌ | ✅ |
+| npm run high | ❌ | ✅ | ✅ |
+| npm run go | ❌ | ✅ | ❌ |
