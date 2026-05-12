@@ -1,0 +1,25 @@
+{
+  "name": "quant-trading-workflow",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clear": "node ./src/clear_data.mjs",
+    "capture": "node ./src/blave_capture.mjs",
+    "save:report": "powershell -ExecutionPolicy Bypass -File ./scripts/save_report.ps1",
+    "start": "powershell -ExecutionPolicy Bypass -File ./scripts/start_20260505_v1.ps1",
+    "start:batch": "powershell -ExecutionPolicy Bypass -File ./scripts/抓取數據腳本/blave_all.ps1",
+    "capture:blave:toptrader:position": "node ./src/blave_capture.mjs --task blave:toptrader:position --noManual --waitMs 60000",
+    "capture:blave:liquidation:overview": "node ./src/blave_capture.mjs --task blave:liquidation:overview --noManual --waitMs 60000",
+    "capture:blave:taker_intensity:overview": "node ./src/blave_capture.mjs --task blave:taker_intensity:overview --noManual --waitMs 60000",
+    "capture:blave:whale_hunter:overview": "node ./src/blave_capture.mjs --task blave:whale_hunter:overview --noManual --waitMs 60000",
+    "capture:blave:holder_concentration:overview": "node ./src/blave_capture.mjs --task blave:holder_concentration:overview --noManual --waitMs 60000",
+    "capture:blave:market_sentiment:overview": "node ./src/blave_capture.mjs --task blave:market_sentiment:overview --noManual --waitMs 60000",
+    "capture:blave:funding_rate:overview": "node ./src/blave_capture.mjs --task blave:funding_rate:overview --noManual --waitMs 60000",
+    "capture:blave:funding_rate:history": "node ./src/blave_capture.mjs --task blave:funding_rate:history --noManual --waitMs 60000",
+    "capture:blave:oi_imbalance:overview": "node ./src/blave_capture.mjs --task blave:oi_imbalance:overview --noManual --waitMs 60000",
+    "capture:blave:squeeze_momentum:history": "node ./src/blave_capture.mjs --task blave:squeeze_momentum:history --noManual --waitMs 60000"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
